@@ -1,0 +1,73 @@
+.outlet-container .row {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px 20px;
+}
+
+.outlet-container .column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.outlet-container .column img {
+    height: 240px;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 8px;
+}
+
+.outlet-container .column h5 {
+    position: relative;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.outlet-container .column h5:hover {
+    cursor: pointer;
+}
+
+.outlet-container .column .address {
+    display: none;
+    font-size: 13px;
+}
+
+.outlet-container .column h5:after {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900; 
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.outlet-container .column .button-group {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+.outlet-container .button-group a {
+    width: 46%;
+    display: inline-block;
+    background-color: #fed8b71f;
+    border: 1px solid #FED8B733;
+    color: #3D3D3D;
+
+}
+
+@media (max-width: 768px) {
+    .outlet-container .row {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .outlet-container .row {
+        grid-template-columns: 1fr;
+    }
+}
