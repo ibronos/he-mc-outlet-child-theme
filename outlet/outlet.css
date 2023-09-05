@@ -1,6 +1,6 @@
 .outlet-container .row {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px 20px;
 }
 
@@ -13,10 +13,10 @@
 
 .outlet-container .column img {
     height: 240px;
-    width: auto;
-    background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
     padding-bottom: 8px;
+    object-fit: cover;
 }
 
 .outlet-container .column h5 {
@@ -57,12 +57,15 @@
     background-color: #fed8b71f;
     border: 1px solid #FED8B733;
     color: #3D3D3D;
+}
 
+.show-outlet-element {
+    display: inline-block !important;
 }
 
 @media (max-width: 768px) {
     .outlet-container .row {
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
